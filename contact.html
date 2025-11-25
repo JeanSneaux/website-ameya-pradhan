@@ -14,9 +14,9 @@
             <a href="index.html" class="logo">MY BRAND.</a>
             <nav>
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
                 <div class="burger" id="burger">
                     <i class="fas fa-bars"></i>
@@ -26,31 +26,24 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Elevating Ideas into Reality</h1>
-                <p>I am a creative professional dedicated to building your vision.</p>
-                <a href="contact.html" class="btn">Work With Me</a>
-            </div>
-        </section>
-
-        <section class="features container">
-            <div class="card">
-                <i class="fas fa-pencil-alt"></i>
-                <h3>Design</h3>
-                <p>Modern aesthetics tailored to your audience.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-code"></i>
-                <h3>Development</h3>
-                <p>Clean, efficient, and scalable code.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-bullhorn"></i>
-                <h3>Strategy</h3>
-                <p>Data-driven approaches to grow your brand.</p>
-            </div>
-        </section>
+<section class="container page-content">
+    <h2>Contact Me</h2>
+    <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" required>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
     </main>
 
     <footer>
